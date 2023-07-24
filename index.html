@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website Icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65539b4138.js" crossorigin="anonymous"></script>
+    <title>Gujrat News || Find news you want</title>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="psl" onclick="onNavItemClick('psl')">PSL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="newsinput" id="news-input" placeholder="e.g Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+                    
+        </div>
+        <template id="template-news-card">
+            <!-- template basically dikhai ni deta 
+            template wali cheez basically gaib ho jati dom mei se-->
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h4 class="news-source" id="news-source">End Gadget 26/08/2023</h4>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cumque est iusto sunt facere maiores voluptatum iure officia, saepe asperiores!</p>
+                </div>
+            </div>
+        </template>
+    </main>
+
+    <footer class="container">
+        <p>All Rights Reserved. Created by Muhammad Furqan Abbas&nbsp&nbsp
+        <a href="https://github.com/mfurqanabbas20"><i class="fa-brands fa-github"></i></a>&nbsp&nbsp
+        <a href="https://www.facebook.com/malikmuhammadfurqan.abbas/"><i class="fa-brands fa-facebook"></i></a>&nbsp&nbsp
+        <a href="https://www.linkedin.com/in/muhammad-furqan-abbas-870125233/"><i class="fa-brands fa-linkedin"></i></a>&nbsp&nbsp
+        <a href="https://www.instagram.com/m_furqan_abbas10"><i class="fa-brands fa-instagram"></i></a>&nbsp&nbsp
+        <a href="https://twitter.com/mfurqanabbas20"><i class="fa-brands fa-twitter"></i></a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
